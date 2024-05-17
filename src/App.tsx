@@ -1,17 +1,9 @@
-import { useState } from "react";
-import Alert from "./Components/Alert";
-import Button from "./Components/Button";
+import { AiFillCalendar } from "react-icons/ai";
 
 function App() {
-  const [alertVisible, setAleartVisibility] = useState(false);
   return (
     <div>
-      {alertVisible && (
-        <Alert onClose={() => setAleartVisibility(false)}>An Aleart</Alert>
-      )}
-      <Button colour="warning" onClick={() => setAleartVisibility(true)}>
-        My Button
-      </Button>
+      <AiFillCalendar color="red" size={40} />
     </div>
   );
 }
